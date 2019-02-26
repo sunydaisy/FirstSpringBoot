@@ -22,7 +22,7 @@ public class LoginController {
 	@PostMapping("/login")
 	public String login(@Valid @RequestBody UserInfoVO user,BindingResult bindingResult) {
 		if(bindingResult.hasErrors()) {
-			return "请求参数错误----";
+			return "请求参数错误----"+bindingResult.getFieldError().getDefaultMessage();
 		}
 		return service.login(user);
 	}

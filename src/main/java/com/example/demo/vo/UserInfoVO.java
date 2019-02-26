@@ -9,10 +9,10 @@ import lombok.Setter;
 @Setter
 public class UserInfoVO {
 	
-	@NotBlank
+	@NotBlank(message="账户不能为空")
 	private String userName;
 	
-	@NotBlank
+	@NotBlank(message="密码不能为空")
 	private String passWord;
    
 }

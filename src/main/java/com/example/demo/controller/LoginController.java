@@ -12,7 +12,7 @@ import com.example.demo.vo.UserInfoVO;
 import lombok.extern.slf4j.Slf4j;
 
 @RestController
-@RequestMapping("/first")
+@RequestMapping("/api/first")
 @Slf4j
 public class LoginController {
 	

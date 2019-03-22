@@ -21,7 +21,7 @@ public class LoginController {
 	
 	@PostMapping("/login")
 	public String login(@Valid @RequestBody UserInfoVO user,BindingResult bindingResult) {
-		log.info("params："+user.toString());
+		log.info("哈哈哈---hahah----params："+user.toString());
 		if(bindingResult.hasErrors()) {
 			return "请求参数错误----"+bindingResult.getFieldError().getDefaultMessage();
 		}

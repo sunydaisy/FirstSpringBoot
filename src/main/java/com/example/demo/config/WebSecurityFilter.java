@@ -21,6 +21,7 @@ public class WebSecurityFilter implements Filter {
 			throws IOException, ServletException {
 		CachingRequestWrapper req = new CachingRequestWrapper((HttpServletRequest) request);
 		log.info("------filter-request-uri:" + req.getRequestURI());
+		chain.doFilter(req,response);
 	}
 
 }
